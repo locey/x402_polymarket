@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# 获取暂存区的文件列表
+STAGED_FILES=$(git diff --cached --name-only)
+
+# 检查是否有 frontend 的改动
+if echo "$STAGED_FILES" | grep -q "^frontend/"; then
+  echo "检测到 frontend 改动，执行 lint-staged..."
+  cd frontend
+  npx lint-staged
+  cd ..
+fi
+
+echo "检查完成"
+exit 0
+
