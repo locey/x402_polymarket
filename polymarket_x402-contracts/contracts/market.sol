@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.28;
 
-contract Makrket {
+contract Market {
     // 市场状态类型枚举
     enum MarketStatus {
         Active,     // 可交易
