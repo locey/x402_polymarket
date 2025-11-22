@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mysql8:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_USER: easyuser
+      MYSQL_PASSWORD: easypasswd
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
