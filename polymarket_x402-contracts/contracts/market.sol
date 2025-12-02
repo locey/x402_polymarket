@@ -102,6 +102,4 @@ contract Market {
         uint256 payout = shares; // 简单的认为获得的奖金就是1u一股
         payable(msg.sender).transfer(payout);
     }
-
-
 }

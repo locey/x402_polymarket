@@ -10,6 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.3",
+    "ethers": "^6.15.0",
     "hardhat": "^3.0.15"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }

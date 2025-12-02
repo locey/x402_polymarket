@@ -34,7 +34,7 @@ contract MarketFactory{
             return address(makrket);
     }
 
-    // 获取所有市场
+    // 获取所有市场 
     function getAllMarkets() external view returns (address[] memory) {
         return markets;
     }
