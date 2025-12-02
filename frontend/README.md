@@ -1,8 +1,8 @@
-# X402 Prediction Market Frontend
+# X402 PolyMarket Frontend
 
 ## 项目背景
 
-X402 Prediction Market 是一个基于区块链的去中心化预测市场平台。该项目使用 Next.js 构建前端应用，集成了 RainbowKit 和 Wagmi 来实现 Web3 钱包连接和区块链交互功能。
+X402 PolyMarket 是一个基于区块链的去中心化预测市场平台。该项目使用 Next.js 构建前端应用，集成了 RainbowKit 和 Wagmi 来实现 Web3 钱包连接和区块链交互功能。
 
 ### 技术栈
 

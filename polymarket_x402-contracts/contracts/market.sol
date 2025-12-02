@@ -102,4 +102,14 @@ contract Market {
         uint256 payout = shares; // 简单的认为获得的奖金就是1u一股
         payable(msg.sender).transfer(payout);
     }
+
+    function getShareBalance(address userAddr,uint256 fResult) external view returns (uint256 balance){
+        require(userAddr != address(0), "Market: invalid userAddr");
+        balance = shareBalance[userAddr][fResult];
+    }
+
+    function setMarketStatusSettled() external {
+        status = MarketStatus.Settled;
+    }
+
 }
